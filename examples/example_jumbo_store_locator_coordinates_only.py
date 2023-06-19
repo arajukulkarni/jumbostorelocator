@@ -2,11 +2,10 @@ from pprint import pprint
 
 import requests
 
-# -------------- Post coordinates and address  ----------------
+# -------------- Post coordinates only  ----------------
 
 url = 'http://localhost:5000/stores/findnearest'
 payload = {
-    "postal_address": "Stationsplein, 1012 AB Amsterdam",
     "coordinates": "52.3775763, 4.90138121396174"
 }
 headers = {

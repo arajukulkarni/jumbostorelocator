@@ -2,12 +2,16 @@ from pprint import pprint
 
 import requests
 
-# -------------- Post coordinates and address  ----------------
+
+""" To run this example, make sure you start the web service by opening the file start_web_services and running it"""
+
+
+# -------------- Post address only ----------------
+
 
 url = 'http://localhost:5000/stores/findnearest'
 payload = {
-    "postal_address": "Stationsplein, 1012 AB Amsterdam",
-    "coordinates": "52.3775763, 4.90138121396174"
+    "postal_address": "Rijksweg 15 5462 CE Veghel"
 }
 headers = {
     "Content-Type": "application/json"
@@ -20,3 +24,7 @@ if response.status_code == 200:
     pprint(result)
 else:
     print('Request failed with status code:', response.status_code)
+
+
+
+
