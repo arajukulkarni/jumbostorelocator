@@ -1,11 +1,50 @@
-This application is built on Python 3.7.9 64bit. Please use this version for best results. However, most of this code
-should also work on other python 3 versions (not-tested). Check the requirements.txt file to find all the dependencies
-of this project.
+# Project Name
 
+Jumbo Store Locator
 
-How to run the application:
-1. Setup python and virtual env
-2. install requirements (you may use 'pip install -r requirements.txt' in your venv terminal to install at once)
-3. start web-service by running the 'start_web_service.py' file
-4. Make requests to the api. See example in 'example_jumbo_store_locator'
+## Overview
 
+This application is built on Python 3.7.9 64bit. Please use this version for best results. However, most of this code should also work on other Python 3 versions (not tested). The application helps locate the 5 closest Jumbo stores to a given position.
+
+## Installation
+
+1. Ensure Python 3.7.9 64bit is installed on your system.
+2. Clone the repository to your local machine.
+3. Set up a virtual environment for the project.
+4. Install the required dependencies by running the following command in your virtual environment terminal:
+
+```shell
+pip install -r requirements.txt
+```
+
+## Usage
+
+1. Start the web service by running the `start_web_service.py` file.
+2. Make requests to the API to find the 5 closest Jumbo stores. An example can be found in the `example_jumbo_store_locator` file.
+
+## Data
+
+A list of Jumbo stores in JSON format is provided with this project. The file contains the necessary store information for the store locator functionality.
+
+## Contributing
+
+Contributions to this project are welcome. If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+We would like to acknowledge the following resources and libraries that have been used in this project:
+
+- Python 3.7.9 64bit
+- [List of Jumbo Stores JSON](jumbo_stores.json)
+- [Flask](https://flask.palletsprojects.com/)
+- [Geopy](https://geopy.readthedocs.io/)
+
+Please refer to their respective documentation for more information.
+
+---
+
+Thank you for your interest in our project! If you have any questions or need further assistance, please don't hesitate to contact us.
