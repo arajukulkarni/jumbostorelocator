@@ -12,6 +12,6 @@ response = requests.get(url)
 
 if response.status_code == 200:
     data = response.json()
-    pprint(data[0])
+    pprint(data)
 else:
     print('Request failed with status code:', response.status_code)
