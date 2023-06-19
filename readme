@@ -1,0 +1,11 @@
+This application is built on Python 3.7.9 64bit. Please use this version for best results. However, most of this code
+should also work on other python 3 versions (not-tested). Check the requirements.txt file to find all the dependencies
+of this project.
+
+
+How to run the application:
+1. Setup python and virtual env
+2. install requirements (you may use 'pip install -r requirements.txt' in your venv terminal to install at once)
+3. start web-service by running the 'start_web_service.py' file
+4. Make requests to the api. See example in 'example_jumbo_store_locator'
+
