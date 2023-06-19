@@ -39,7 +39,7 @@ This project is licensed under the [MIT License](LICENSE).
 We would like to acknowledge the following resources and libraries that have been used in this project:
 
 - Python 3.7.9 64bit
-- [List of Jumbo Stores JSON](jumbo_stores.json)
+- [List of Jumbo Stores JSON](stores.json)
 - [Flask](https://flask.palletsprojects.com/)
 - [Geopy](https://geopy.readthedocs.io/)
 
