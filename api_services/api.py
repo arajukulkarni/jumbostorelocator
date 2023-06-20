@@ -45,7 +45,9 @@ def findnearest():
     closest_stores = StoreLocator(postal_address=postal_address,
                                   coordinates=coordinates,
                                   store_data=store_data).generate_dictionary_five_closest_stores()
-    return jsonify(closest_stores)
+    if closest_stores:
+        return jsonify(closest_stores)
+    return jsonify({"message": "No store found"}), 404
 
 
 if __name__ == '__main__':
