@@ -21,7 +21,7 @@ class StoreApiTest(unittest.TestCase):
         headers = {"Content-Type": "application/json"}
         response = requests.post(url, json=payload, headers=headers)
         self.assertEqual(response.status_code, 200)
-        self.assertIsInstance(response.json(), list)
+        self.assertIsInstance(response.json(), dict)
 
 
 if __name__ == '__main__':
