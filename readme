@@ -4,7 +4,8 @@ Jumbo Store Locator
 
 ## Overview
 
-This application is built on Python 3.7.9 64bit. Please use this version for best results. However, most of this code should also work on other Python 3 versions (not tested). The application helps locate the 5 closest Jumbo stores to a given position.
+This application is built on Python 3.7.9 64bit. Please use this version for best results. However, most of this code should also work on other Python 3 versions (not tested). The application helps locate the 5 closest Jumbo stores to a given postal address or coordinates.
+The application can also give all the stores in the database and a specific store based on the uuid.
 
 ## Installation
 
