@@ -13,7 +13,7 @@ store_data = get_store_data()
 @app.route('/stores', methods=['GET'])
 def get_stores():
     """
-    Returns a jsonified dictionary of all stores in the database
+    Returns a dictionary of all stores in the database
     :return: dict
     """
     return jsonify(store_data)
