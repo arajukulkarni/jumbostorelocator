@@ -16,7 +16,7 @@ class StoreLocator(object):
     This class is used to locate five closest stores to a given postal address or its coordinate
     """
 
-    def __init__(self, postal_address=None, coordinates=None, store_data=None):
+    def __init__(self, postal_address=None, coordinates=None, store_data=None, nr_stores=5):
         """
         This class takes the optional inputs of postal address and/or location coordinates and defines the variables
         not provided by the user. If both postal address and coordinates are provided, an error is raised.
@@ -32,6 +32,8 @@ class StoreLocator(object):
             self.store_data = get_store_data()
         else:
             self.store_data = store_data
+
+        self.nr_stores = nr_stores
 
         if not postal_address and not coordinates:
             raise ValueError(self.input_error)
@@ -54,7 +56,8 @@ class StoreLocator(object):
 
     def get_coordinates(self):
         """
-        Uses the postal address to determine the coordinates of the location [latitude, longitude]
+        Uses the postal address to determine the coordinates of the location [latitude, longitude] using the free
+        NOMINATIM library
         :return: list
         """
         geolocator = Nominatim(user_agent="my_geocoder")
@@ -79,7 +82,7 @@ class StoreLocator(object):
         :return: list
         """
         distances = self.get_distance_from_all_stores()
-        res = sorted(range(len(distances)), key=lambda sub: distances[sub])[:5]
+        res = sorted(range(len(distances)), key=lambda sub: distances[sub])[:self.nr_stores]
         return res
 
     def generate_dictionary_five_closest_stores(self):
