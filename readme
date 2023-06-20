@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ## Usage
 
 1. Start the web service by running the `start_web_service.py` file.
-2. Make requests to the API to find the 5 closest Jumbo stores. An example can be found in the `example_jumbo_store_locator` file.
+2. Make requests to the API to find the 5 closest Jumbo stores. An example can be found in the `example/example_jumbo_store_locator` file.
 
 ## Data
 
